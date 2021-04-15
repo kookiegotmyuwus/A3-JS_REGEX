@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+<title>Slide show (6 images)</title>
+<script>
+
+var counter = 0;
+
+    function fclick() 
+    {
+
+		counter=counter+1;
+	if (counter == 1) {
+		document.searchImage.src = "https://images.wallpapersden.com/image/download/mikasa-ackerman-anime_a2xrbmiUmZqaraWkpJRmbmdlrWZnZWU.jpg"
+		document.back.src="https://cdn2.iconfinder.com/data/icons/media-controls-5/100/rewind-512.png"
+		document.forward.src="https://image.freepik.com/free-icon/forward-button-player_318-10019.jpg"
+	}
+	if (counter == 2) {
+		document.searchImage.src = "https://img.republicworld.com/republic-prod/stories/promolarge/xxhdpi/ursqezrdbkv1an8j_1614597413.jpeg?tr=w-758,h-433"
+		document.back.src="https://cdn2.iconfinder.com/data/icons/media-controls-5/100/rewind-512.png"
+		document.forward.src="https://image.freepik.com/free-icon/forward-button-player_318-10019.jpg"
+	}
+	if (counter == 3) {
+		document.searchImage.src = "https://devdiscourse.blob.core.windows.net/devnews/11_01_2019_00_38_27_9228227.jpg"
+		document.back.src="https://cdn2.iconfinder.com/data/icons/media-controls-5/100/rewind-512.png"
+		document.forward.src="https://image.freepik.com/free-icon/forward-button-player_318-10019.jpg"
+	}
+	if (counter == 4) {
+		document.searchImage.src = "https://img5.goodfon.com/wallpaper/nbig/b/20/shingeki-no-kyojin-ataka-titanov-mikasa-akerman-sharf-devush.jpg"
+		document.back.src="https://cdn2.iconfinder.com/data/icons/media-controls-5/100/rewind-512.png"
+		document.forward.src="https://image.freepik.com/free-icon/forward-button-player_318-10019.jpg"
+	}
+	if (counter == 5) {
+		document.searchImage.src = "https://i.pinimg.com/736x/bc/58/b3/bc58b3934474470f49befcf61a14094c--armin-legout-judith.jpg"
+        document.forward.src="https://wallpapercave.com/wp/wp6681156.jpg"
+		document.back.src="https://cdn2.iconfinder.com/data/icons/media-controls-5/100/rewind-512.png"
+	}
+}
+function bclick() 
+    {
+
+	counter=counter-1;
+	if(counter==0)
+	{
+		document.searchImage.src="https://images.wallpapersden.com/image/download/levi-ackerman_66014_1680x1050.jpg"
+		document.back.src="https://wallpapercave.com/wp/wp6681156.jpg"
+		document.forward.src="https://image.freepik.com/free-icon/forward-button-player_318-10019.jpg"
+	}
+	if (counter == 1) {
+		document.searchImage.src = "https://images.wallpapersden.com/image/download/mikasa-ackerman-anime_a2xrbmiUmZqaraWkpJRmbmdlrWZnZWU.jpg"
+		document.back.src="https://cdn2.iconfinder.com/data/icons/media-controls-5/100/rewind-512.png"
+		document.forward.src="https://image.freepik.com/free-icon/forward-button-player_318-10019.jpg"
+	}
+	if (counter == 2) {
+		document.searchImage.src = "https://img.republicworld.com/republic-prod/stories/promolarge/xxhdpi/ursqezrdbkv1an8j_1614597413.jpeg?tr=w-758,h-433"
+		document.back.src="https://cdn2.iconfinder.com/data/icons/media-controls-5/100/rewind-512.png"
+		document.forward.src="https://image.freepik.com/free-icon/forward-button-player_318-10019.jpg"
+	}
+	if (counter == 3) {
+		document.searchImage.src = "https://devdiscourse.blob.core.windows.net/devnews/11_01_2019_00_38_27_9228227.jpg"
+		document.back.src="https://cdn2.iconfinder.com/data/icons/media-controls-5/100/rewind-512.png"
+		document.forward.src="https://image.freepik.com/free-icon/forward-button-player_318-10019.jpg"
+	}
+	if (counter == 4) {
+		document.searchImage.src = "https://img5.goodfon.com/wallpaper/nbig/b/20/shingeki-no-kyojin-ataka-titanov-mikasa-akerman-sharf-devush.jpg"
+		document.back.src="https://cdn2.iconfinder.com/data/icons/media-controls-5/100/rewind-512.png"
+		document.forward.src="https://image.freepik.com/free-icon/forward-button-player_318-10019.jpg"
+	}
+	if (counter == 5) {
+		document.searchImage.src = "https://i.pinimg.com/736x/bc/58/b3/bc58b3934474470f49befcf61a14094c--armin-legout-judith.jpg"
+        document.forward.src="https://wallpapercave.com/wp/wp6681156.jpg"
+		document.back.src="https://cdn2.iconfinder.com/data/icons/media-controls-5/100/rewind-512.png"
+		
+		
+	}
+}
+</script>
+
+</head>
+<body>
+
+<br>
+
+<img src="https://images.wallpapersden.com/image/download/levi-ackerman_66014_1680x1050.jpg" style="width:500px;height:auto;margin-left:500px;" name="searchImage"><p>
+
+<img src="https://image.freepik.com/free-icon/forward-button-player_318-10019.jpg" name="forward" style="width:40px;height:auto;margin-left:710px;" onclick="fclick()">
+<img src="https://wallpapercave.com/wp/wp6681156.jpg" name="back" style="width:40px;height:auto;margin-left:40px;" onclick="bclick()">
+
+
+</body>
+</html>

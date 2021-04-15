@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>RegEx Form</title>
+        <link rel="stylesheet" href="Q1.css">
+    </head>
+    <body>
+        <h1 class="h1">Sign Up</h1>
+        <div class="form">
+        <form onsubmit="return checkin()" autocomplete="off">
+            
+            <label for="username">Name:</label><br>
+            <input  type="text" id="username" name="username" ><br><br>
+            <p id="vName"></p><br>
+
+            <label for="phone">Phone Number:</label><br>
+            <input  type="text" id="phone" name="phoneNumber">
+            <br><p id="vNum" class="one"></p><br><p id="vNum1" class="extra"></p><br>
+
+            <label for="city">City:</label><br>
+            <input  type="text" id="city" name="city" >
+            <br><p id="vCity"></p><br>
+
+            <label for="email">Email:</label><br>
+            <input  type="email" id="email" name="email" >
+            <br><p id="vEmail"></p><br>
+
+            <label for="password">Password:</label><br>
+            <input  type="password" id="password" name="password" value="">
+            <br><p id="vPassword" class="one"></p><br><p id="vPassword1" class="extra"></p><br>
+
+            <label for="cpassword">Confirm Password:</label><br>
+            <input  type="password" id="cpassword" name="cpassword" value="">
+            <br><p id="vCPassword"></p><br>
+
+            <label for="age">Age:</label><br>
+            <input  type="text" id="age" name="age"><label id="agelabel" for="age"></label>
+            <br><p id="vAge"></p><br>
+
+            
+            <label for="education">Education Qualification:</label><br>
+            <select id="qualification" name="qualification">
+                <option value="select" selected="selected" disabled>Select one from the list</option>
+                <option value="No Education">BSc</option>
+                <option value="Primary">Msc</option>
+                <option value="Secondary">Btech</option>
+                <option value="Bachelor">Mtech</option>
+                <option value="Master">Master</option>
+                <option value="Doctorate">PHd</option>
+            </select>
+            <br><p id="vQualification"></p><br>
+
+            <label>Gender:</label><br>
+            <input type="radio" id="male" name="gender"  value="male">
+            <label for="male" class="genderLabel">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female" class="genderLabel">Female</label>
+            <br><p id="vGender"></p><br>
+            <p id="x"></p><br>
+            
+            <button type="submit" onclick="checkin()">Submit</button>
+        </form>
+
+        
+        
+        <script type="text/javascript" src="Q1.js"></script>
+    </body>
+</html>
