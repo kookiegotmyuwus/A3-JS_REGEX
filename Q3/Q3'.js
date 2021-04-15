@@ -28,10 +28,10 @@ document.getElementById("password").onkeypress = function(event){
 }
 
 function incheck(){
-    var count = 0;
+    var x = 0;
     var password = document.getElementById("password").value;
     var email = document.getElementById("mail").value;
-    if(countEmail == 1){
+    if(x == 1){
         var xhr = new XMLHttpRequest();
 
         xhr.open("POST", "https://reqres.in/api/login", true);
@@ -40,14 +40,15 @@ function incheck(){
         
         
         xhr.onreadystatechange = function(){
-            if(this.readyState == 4 && this.status == 200){
+            if(this.readyState == 4 && this.status == 200)
+            {
                 alert("Login successful  Response:" + this.response);
             }
             else if(this.status != 200 && this.readyState == 4){
-                if(count ==0){
+                if(x ==0){
                     alert("Login Failed! Check input");
                 }
-                count = 1;
+                x = 1;
             }
         }
     }
