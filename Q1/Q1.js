@@ -136,7 +136,7 @@ function form1(){
         if(x==8){
             return true;
         }
-        else if(countQualification==0){
+        else if(x8==0){
             document.getElementById("x").style.display = "inline-block";
             document.getElementById("x").innerHTML = "Select Qualification";
             return false;
