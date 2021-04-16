@@ -16,19 +16,9 @@ email1.oninput = function(){
         document.getElementById("vEmail").innerHTML = "Enter a valid email";
     }
 }
-document.getElementById("mail").onkeypress = function(event){
-    if(event.key == "Enter"){
-        document.getElementById("btn").click();
-    }
-}
-document.getElementById("password").onkeypress = function(event){
-    if(event.key == "Enter"){
-        document.getElementById("btn").click();
-    }
-}
 
 function incheck(){
-    var x = 0;
+    var count = 0;
     var password = document.getElementById("password").value;
     var email = document.getElementById("mail").value;
     if(x == 1){
@@ -45,10 +35,10 @@ function incheck(){
                 alert("Login successful  Response:" + this.response);
             }
             else if(this.status != 200 && this.readyState == 4){
-                if(x ==0){
+                if(count ==0){
                     alert("Login Failed! Check input");
                 }
-                x = 1;
+                count = 1;
             }
         }
     }
